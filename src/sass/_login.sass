@@ -1,0 +1,77 @@
+.styled_popup_container
+    border-radius: 8px
+    border: none
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
+
+.styled_popup_container:before
+    border-left: 14px solid transparent
+    border-right: 14px solid transparent
+    border-bottom: 14px solid transparent
+
+.account_popup_register
+    border-radius: 0 0 8px 8px
+    width: 97% !important
+    margin-right: -10px !important
+    margin-top: 10px
+    padding: 15px !important
+
+.template_account
+    margin-right: 40px
+
+input.small-padding
+    all: unset
+    float: left !important
+    margin-top: 10px
+
+a.submit.submit_green
+    background: $primary
+    font-size: 14px
+    padding: 15px
+
+a.submit.float_left
+    border: none
+    border-radius: 8px
+    color: #fff
+    width: 38% !important
+    background: $secondary
+    font-size: 14px
+    height: 20px
+    padding: 15px
+
+.template_account_desc, .template_cart_desc
+    color: $primary
+    font-size: 16px
+    font-weight: 600
+    text-transform: uppercase
+    margin-right: 0
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 105%
+
+.contentBlock .row.header, .styledForm .row.header 
+    font-size: 1rem
+    text-transform: uppercase
+    padding: 10px 20px
+    font-weight: 600
+    letter-spacing: 2px
+    background-color: $primary
+    border-bottom: 2px solid $secondary
+    color: #fff
+
+
+/*MOBILE*/
+
+
+@media (max-width: 960px)
+    .template_account
+        margin-right: 5px
+
+@media (max-width: 992px)
+    #template_header #template_header_list .popup_content_account, #template_header #template_header_list .popup_content_cart
+        top: 80px !important
+
+    .styled_popup_container:before, .styled_popup_container:after
+        left: 68% !important
+
+

@@ -1,0 +1,111 @@
+#template_header #template_main_nav .template_wgprev_heading
+    color: #474D4A
+    font-weight: 400
+    
+#template_header #template_main_nav, .startseite-wrapper
+        
+    .popup_div, .link-nav-wrap
+        padding: 0
+        border-bottom: 4px solid $secondary
+        overflow: hidden
+        li 
+                list-style: none
+                margin: 0
+                padding: 0
+                a 
+                        text-decoration: none
+                        color: $text 
+                        padding: 15px 20px 
+                        display: block
+                        
+                        
+        .template_nav_span
+            .template_wgprev_heading
+                position: relative
+                padding: 3px 30px
+                border-bottom: 1px solid $border
+                border-right: 1px solid $border
+                box-sizing: border-box
+
+                &:hover
+                    background: $primary
+                    color: $white !important
+                    border-bottom-color: $primary
+
+                &:hover i.mdi.mdi-chevron-right::before
+                    filter: grayscale(1) brightness(100)
+                
+                i.mdi.mdi-chevron-right
+                    opacity: 1
+                    visibility: visible
+
+                    &::before
+                        content:""
+                        transform: translateY(-50%)
+                        background-size: contain
+                        background-position: center
+                        background-repeat: no-repeat
+                        display: inline-block
+                        width: 22px
+                        height: 16px
+                        position: relative
+                        top: 6px
+                        left: -7px
+                        
+
+                &[title="Angebote"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/angebote-icon.png)
+
+                &[title="Antriebstechnik"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/riementechnik-icon.png)
+
+                &[title="Arbeitsschutz"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/arbeitsschutz-icon.png)
+                
+                &[title="Betriebseinrichtung"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/betriebseinrichtung-icon.png)
+                
+                &[title="Chemisch-Technisch"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/chemisch-icon.png)
+                
+                &[title="Elektrowerkzeuge"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/elektrowerkzeuge-icon.png)
+                
+                &[title="Werkzeuge"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/werkzeuge-icon.png)
+                
+                &[title="DIN-Normteile"] > i.mdi::before
+                        background-image: url(https://shop.ditzinger.de//benutzerdaten/400042/shop/layout/images/icon/befestigungstechnik-icon.png)
+                  
+            
+                ~ ul 
+                    padding-bottom: 40px
+                    li 
+                        border-bottom-color: $border
+
+                        a 
+                            font-weight: 400
+                            font-family: $regular
+                            font-size: 16px
+                            transition: ease all 400ms
+
+                            &:hover
+                                background: transparent 
+                                color: $secondary
+                                text-decoration: none
+                                
+
+@media only screen and (max-width: 60em)
+        #template_header #template_main_nav .template_wgprev_heading .mdi 
+                display: initial !important
+
+        #template_header #template_main_nav .template_nav_sortiment_button ul, #template_header #template_main_nav span.template_nav_span 
+                padding: 0
+        
+        #template_header #template_main_nav .popup_div .template_nav_span .template_wgprev_heading
+                padding: 5px 30px 3px 30px
+
+
+        #template_header #template_main_nav .popup_div .template_nav_span .template_wgprev_heading i.mdi.mdi-chevron-right:before
+                top: 3px
+                                        

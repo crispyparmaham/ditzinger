@@ -1,0 +1,39 @@
+.marken-content
+    -moz-column-gap: 20px
+    column-gap: 20px
+    display: grid
+    grid-template-columns: repeat(4,24%)
+
+.marke-content
+    align-items: center
+    background: #fff
+    display: flex
+    height: 150px
+    justify-content: center
+    margin-bottom: 20px
+    padding: 32px
+    position: relative
+    transition: all .3s ease
+    border-radius: 8px
+
+.marke-content a
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+
+.marke-content img
+    width: 140px
+
+.marke-content img#mascot
+    width: 100px
+
+
+@media (max-width:768px)
+    .marken-content
+        grid-template-columns: repeat(2, 48%)
+
+@media (max-width:500px)
+    .marken-content
+        grid-template-columns: repeat(1, 100%)

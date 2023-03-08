@@ -1,0 +1,272 @@
+.artdetail_image_frame
+    border-radius: 8px
+    margin-bottom: 20px
+
+.artdetail_shopping
+    border-radius: 8px
+
+h1.main_caption.mobile_artdetail_toggle.dark_caption
+    border-radius: 8px
+    border: none
+    padding: 15px
+    background: $primary !important
+    color: #fff !important
+
+.artdetail_moreimages
+    border-radius: 0 0 8px 8px
+
+.main_caption
+    border: none
+
+
+
+/*RIGHT TOP DIV*/
+
+.artdetail_shopping .dark_caption
+    background: #fff !important
+    color: $primary !important
+    font-size: 1.5em
+    text-align: left !important
+
+.menge_container td:nth-child(1) input
+    border-radius: 8px 0 0 8px
+    border: none
+    color: #fff !important
+
+.menge_container td:nth-child(3) input
+    border-radius: 0 8px 8px 0
+    border: none
+    color: #fff !important
+
+.list_box a.button
+    background: #ededed
+    border-radius: 8px
+
+.preisdiv b
+    color: $primary
+    font-size: 20px
+
+
+/*BOTTOM DIV*/
+
+.mobile_artdetail_div
+    background: #fff
+    border-radius: 8px
+    padding: 50px
+
+#art_desc
+    background: none
+    box-shadow: none
+
+.artdetail_feature_item_content
+    text-align: right
+
+.shop_tabs
+    border-radius: 8px
+    margin-bottom: 15px
+    background: #fff
+
+.shop_tabs .current a
+    border: none
+    color: #fff
+    background: $secondary
+
+.tabCtrl
+    background: none
+    box-shadow: none
+
+.art_grid
+    background: #fff
+    border-radius: 8px
+    float: left
+    width: 23% !important
+    height: 165px
+    border: none
+    background-repeat: no-repeat
+    background-position: center center
+    position: relative
+    box-sizing: border-box
+    margin: 10px
+
+.artdetail_langtext .user_content p b
+    line-height: 3
+    font-size: 16px
+    text-transform: uppercase
+    font-weight: 600
+    letter-spacing: 1px
+
+
+
+/*MOBILE*/
+
+@media (max-width: 1020px)
+    .art_grid
+        width: 31% !important
+
+@media (max-width: 992px)
+    .artdetail_image_frame
+        width: 100%
+    
+    .artdetail_shopping
+        width: 100%
+
+@media (max-width: 872px)
+    .art_grid
+        width: 30% !important
+
+@media (max-width: 612px)
+    .art_grid
+        width: 46% !important
+
+@media (max-width: 510px)
+    .art_grid
+        width: 44% !important
+
+
+
+.breadcrumbs
+    clear: both
+    color: #666
+    display: block
+    font-size: 13px
+
+    .template_wrapper #template_center_column &:nth-child(2)
+        display: none !important
+
+.artdetail_image_frame,
+.tabCtrl
+    background: #fff
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .16)
+
+.artdetail_image_frame
+    float: center
+    text-align: center
+    width: 53%
+
+.artdetail_shopping
+    background: #fff
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .16)
+    box-sizing: border-box
+    margin-bottom: 20px
+    padding: 20px
+    width: 45%
+
+    &.dark_caption
+        background: none !important
+        border: 0
+        color: $primary
+        font-size: 1.4em
+        padding: 0
+        text-transform: uppercase
+
+.preisdiv tr:first-child
+    background: none
+
+.preisdiv tr:nth-child(3)
+    background: #eee
+
+#page_info
+    padding: 20px 40px
+
+#template_left_column
+    background: none !important
+
+.template_sidebar_container
+    background: #fff
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .16)
+
+.sortiment li a
+    color: #000
+
+
+    &i
+        color: $primary
+        font-size: 16px
+        opacity: 1 !important
+
+
+    &i.mdi.mdi-checkbox-blank-outline
+        opacity: 0 !important
+
+.cat_outer_frame
+    background: #fff
+    border: 0
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .16)
+    margin-left: 0
+    margin-right: 20px
+    padding: 20px 0 0
+    position: relative
+    transition: all .3s ease
+    width: calc(33.33% - 20px)
+    z-index: 200
+
+.cat_title_frame
+    opacity: 1
+    top: 160px
+
+.cat_outer_frame:hover
+    transform: scale(1.03)
+
+.cat_outer_frame .cat_image_frame
+    height: calc(100% - 70px)
+
+.cat_title_frame
+    border: none
+
+.cat_image_frame
+    background-size: contain !important
+
+    .cat_outer_frame &.cat_title_frame
+        background-color: #fff
+        border: 0
+        border-bottom: 4px solid transparent
+        bottom: 0
+        opacity: 1
+        position: absolute
+        top: auto
+        transition: all .3s ease
+
+.cat_title_frame h3
+    font-size: 13px
+    margin-bottom: 0
+
+    .cat_outer_frame:hover &
+        color: #fff
+
+.styled_popup_container
+    background: #fff !important
+
+.artangebote_outer_frame
+    border: 0
+    box-sizing: border-box
+    margin: 10px 20px 10px 0
+    transition: all .3s ease
+    width: calc(33.33% - 20px)
+    border-radius: 8px
+
+    &.artangebote_popup
+        border-color: #cacaca
+        height: 360px
+
+.artangebote_popup
+    max-width: 550px
+
+.artangebote_outer_frame .artangebote_image_frame
+    height: 240px
+    margin-top: 20px
+
+@media only screen and (max-width:768px)
+    .cat_outer_frame,
+    .cat_outer_frame:nth-child(3n+1)
+        margin-right: 10px
+        width: calc(50% - 10px)
+
+    .artdetail_image_frame, .artdetail_shopping
+        width: 100% !important
+
+    .artangebote_outer_frame
+        width: calc(50% - 20px)
+
+@media only screen and (max-width:480px)
+    .artangebote_outer_frame
+        width: calc(100% - 20px)

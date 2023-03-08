@@ -1,0 +1,335 @@
+#template_header
+    background: #fff
+
+#template_header .contentholder
+    background: #fff
+    margin: 0 auto
+    max-width: 1200px
+    width: 100%
+
+.template_wrapper#top_wrapper
+    max-width: 100%
+
+#template_header_list
+    margin: 0px
+    padding: 0px
+    float: right
+    width: 70%
+    list-style: outside none none
+    position: relative
+    text-align: right
+    z-index: 1000
+    display: table
+
+select#template_cat_search_list
+    display: none !important
+
+#template_search_form
+    border-radius: 4px
+    width: 100%
+
+#template_header_list 
+    margin-top: 40px
+    margin-bottom: 20px !important
+
+#template_header #template_logo
+    margin: 0
+    padding: 0
+
+.template_header_item #template_search_text
+    font-size: 12px
+    border-radius: 8px
+    border: none
+    background: whitesmoke
+
+.template_header_item #template_search_text
+    width: 80% !important
+    height: 45px
+    padding: 10px
+    font-size: 14px
+    box-shadow: none
+    font-family: $regular
+    text-transform: uppercase !important
+
+.template_header_item #template_search_submit
+    position: absolute
+    top: 0px
+    right: 0px
+    height: 45px
+    width: 45px
+    text-align: center
+    border-radius: 0 8px 8px 0
+
+.accent_button, button.accent_button, input.accent_button 
+    background: $secondary !important
+    border-color: none
+    color: #fff
+
+.template_header_item.template_search
+    margin-top: 25px
+
+.popup_content_account
+    right: -48px
+    top: 80px
+
+.popup_content_cart
+    right: 4px
+    top: 80px
+
+
+/*ICONS*/
+
+.mdi-account:before, .mdi-cart:before
+    color: #fff
+    font-size: 26px
+
+.template_header_item > a
+    border-radius: 50% 
+    background: $primary
+    color: #fff
+    display: flex
+    flex-direction: column
+    font-size: 26px
+    height: 50px
+    min-width: 50px
+    text-align: center
+    justify-content: center
+
+.template_account_desc, .template_cart_desc
+    font-size: 14px !important
+
+
+/*NAV*/
+
+#template_header #template_main_nav
+    background-color: $primary
+    position: relative
+
+#template_main_nav li.template_nav_sortiment_button
+    background: $secondary
+    border: none
+    
+@media (min-width: 1199px)
+    .template_wrapper #template_main_nav:before
+        background: $primary
+        content: ""
+        height: 100%
+        left: -100%
+        position: absolute
+        width: 100%
+
+    .template_wrapper #template_main_nav:after
+        background: $primary
+        content: ""
+        height: 100%
+        position: absolute
+        right: -100%
+        width: 100%
+
+    #template_main_nav li
+        border: none
+        width: 100%
+
+.template_account .popup_content_account ul li:first-child
+    color: #000
+
+@media (max-width:960px)
+    #template_header #template_header_list
+        margin-top: 0
+        width: 102%
+
+    #template_header #template_logo
+        max-width: 35%
+
+    #template_header_list
+        margin-bottom: 0
+
+    #template_header
+        padding: 0 20px
+
+    .template_account
+        margin-right: 0
+
+    .mdi-menu:before
+        color: #fff
+
+    .template_header_item.template_search
+        margin-top: 10px
+
+@media (max-width:660px)
+    .template_wrapper#top_wrapper #template_header #template_logo
+        max-height: none
+
+
+#template_header #template_main_nav
+    border-bottom: none
+    box-shadow: none
+    display: flex
+    justify-content: center
+    position: relative
+
+    &>li>a
+        color: #fff
+        display: block
+        font-size: 14px
+        font-weight: 700
+        line-height: 30px
+        text-align: center
+        text-transform: uppercase
+
+    &.popup_div
+        top: 60px !important
+
+
+
+@media only screen and (max-width:700px)
+    .popup_div
+        box-sizing: border-box
+        top: 100%
+        width: 100vw
+
+    .popup_div,
+    .sticky_navi_fixed .popup_div
+        left: 0 !important
+
+@media only screen and (max-width:60em)
+
+    #template_header #template_header_list .popup_content_account,
+    #template_header #template_header_list .popup_content_cart,
+    #template_header #template_header_list .popup_content_menu
+        top: 125px
+
+#sticky_menu.sticky_navi.sticky_navi_fixed
+    align-items: center
+    display: flex
+    height: auto
+    left: 0
+    max-width: 100%
+    z-index: 99991
+
+    &.top_navi
+        padding: 1.5em 1em
+        width: 100%
+        background: #fff
+
+.sticky_navi_fixed #template_search_form
+    top: 6px
+
+@media only screen and (max-width:30em)
+    .sticky_logo_mini_position
+        left: 0
+        top: 0
+
+    #template_logo_stickynavi
+        max-width: 25%
+
+@media (min-width:961px)
+    .sticky_logo_mini_position #template_logo_stickynavi
+        left: 40px !important
+        margin: 0 !important
+        max-width: 70% !important
+        position: absolute !important
+        top: 50% !important
+        transform: translateY(-50%)
+
+@media (max-width:992px)
+    #template_header #template_header_list .popup_content_menu
+        background: #fff
+        box-sizing: border-box
+        top: 135px
+        width: 100%
+
+    #template_header #template_header_list .popup_content_account,
+    #template_header #template_header_list .popup_content_cart
+        background: #fff
+        box-sizing: border-box
+        position: fixed !important
+        top: 135px
+        width: 100%
+
+    #template_header_list li.template_nav
+        position: static !important
+
+
+
+/*SCROLL*/
+
+
+#sticky_menu.sticky_navi.sticky_navi_fixed .top_navi
+    background: #fff
+    min-width: 100%
+
+#template_logo_stickynavi
+    max-height: 90px
+
+#sticky_menu
+    border-bottom: 1px solid $secondary
+    
+
+
+/*MOBILE*/
+
+@media (min-width: 960px)
+    .sticky_logo_mini_position #template_logo_stickynavi
+        height: auto !important
+        position: absolute!important
+        top: 50% !important
+        transform: translateY(-50%)
+
+    #sticky_menu .top_navi #template_header_list
+        margin: 0
+        padding-right: 50px
+
+
+@media (max-width: 960px)
+    #template_header
+        padding: 0 
+    
+    #template_header #template_header_list
+        margin-top: 0
+        width: 100%
+
+    #template_header .template_header_item>a
+        align-items: center
+        background: $primary
+        display: flex
+        justify-content: center
+
+    .template_header_item #template_search_text
+        width: 100% !important
+
+
+@media (max-width: 660px)
+    .template_wrapper#top_wrapper #template_header #template_logo
+        max-height: none
+
+
+@media (max-width: 480px)
+    #template_header #template_logo
+        box-sizing: border-box
+        left: 50%
+        margin-bottom: 20px
+        margin-top: 0
+        max-height: 45px!important
+        max-width: 35%
+        padding: 0 5px
+        position: absolute
+        top: 15px
+        transform: translate(-50%,-50%)
+        z-index: 0
+
+
+@media only screen and (max-width: 30em)
+    .sticky_logo_mini_position 
+        top: 0
+
+    .mdi-account:before, .mdi-cart:before 
+        font-size: 22px
+
+    #template_header .template_header_item>a 
+        height: 45px
+        width: 30px
+
+    .template_header_item a > i 
+        padding-left: 5px
+        padding-right: 5px
