@@ -71,36 +71,46 @@
 
 /*ANGEBOTE*/
 
-.angebotswrapper .artangebote_outer_frame .artangebote_image_frame
-    height: 170px
-    margin-top: 60px
+.artangebote_outer_frame .artangebote_image_frame
+    height: 190px !important
+    margin-top: 100px !important
 
 .angebotswrapper .artangebote_outer_frame 
     width: calc(25% - 20px)
 
-.angebotswrapper .artangebote_title_frame
+.artangebote_title_frame
     border-radius: 8px 8px 0 0
-    font-size: 16px
+    font-size: 14px
     font-weight: 400
     line-height: 1.6
     padding: 10px
     top: 0
+    left: 0
     width: 93%
 
-.angebotswrapper .artangebote_outer_frame
+.artangebote_outer_frame
     &:hover
         box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 30%)
+        border: none
 
-.angebotswrapper .artangebote_outer_frame 
+.artangebote_outer_frame 
     &:hover .artangebote_title_frame
         background: $primary
         color: #fff
 
-.angebotswrapper .artangebote_popup
-    border: 1px solid rgba(0,0,0,0.3)
-
 .artangebote_outer_frame
     border-radius: 8px
+
+.artangebote_popup.artangebote_popup_right 
+    border-left: none
+
+.artangebote_popup
+    height: 100% !important
+    top: 0 !important
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px
+    border: none !important
+
+
 
 @media (max-width: 768px)
     .startseite-wrapper .teaser-box-wrap

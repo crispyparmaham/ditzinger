@@ -98,6 +98,10 @@ select#template_cat_search_list
 .template_account_desc, .template_cart_desc
     font-size: 14px !important
 
+.sticky_navi_fixed .template_account_desc,
+.sticky_navi_fixed .template_cart_desc
+    display: none
+    
 
 /*NAV*/
 
@@ -106,8 +110,13 @@ select#template_cat_search_list
     position: relative
 
 #template_main_nav li.template_nav_sortiment_button
-    background: $secondary
+    background: none
     border: none
+
+#template_header #template_main_nav > li > a:hover, #template_header #template_main_nav > li > a.active
+    background: $secondary
+    color: #ffffff
+    
     
 @media (min-width: 1199px)
     .template_wrapper #template_main_nav:before
